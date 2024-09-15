@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+:root {
+  --StrongCyan: hsl(171, 66%, 44%);
+  --LightBlue: hsl(233, 100%, 69%);
+  --DarkGrayishBlue: hsl(210, 10%, 33%);
+  --GrayishBlue: hsl(201, 11%, 66%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 18px;
+  font-family: "Bai Jamjuree", sans-serif;
+  background: url(bg-header-desktop.png) no-repeat;
+  background-size: contain;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.one,
+.two,
+.four,
+.five,
+.six,
+.eight {
+  max-width: 700px;
+  text-align: center;
+}
+.one {
+  padding-top: 20px;
+}
+.c {
+  width: 20%;
+  padding: 80px 0;
+}
+h3 {
+  font-size: 40px;
+  color: var(--DarkGrayishBlue);
+}
+p {
+  color: var(--GrayishBlue);
+  line-height: 30px;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+button {
+  margin: 20px 0 50px 0;
+  padding: 15px 30px;
+  border-radius: 50px;
+  border: none;
+  color: white;
+  font-size: 18px;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+button:hover {
+  filter: brightness(130%);
+  scale: 1.1;
+}
+.one,
+.eight {
+  h3,
+  p {
+    padding-bottom: 30px;
+  }
+  padding-bottom: 50px;
+}
+.two {
+  padding-top: 60px;
+  h3 {
+    padding-bottom: 30px;
+  }
+  p {
+    padding-bottom: 50px;
+  }
+}
+.three {
+  padding-top: 50px;
+  img {
+    margin-left: -40px;
+  }
+  display: flex;
+  .list {
+    padding: 40px 10px 30px 120px;
+    max-width: 45%;
+    h3 {
+      font-size: 30px;
+      padding-bottom: 10px;
+    }
+    p {
+      padding-bottom: 60px;
+      line-height: 30px;
+    }
+  }
+}
+.four {
+  padding: 120px 0;
+  h3 {
+    padding-bottom: 20px;
+  }
+}
+.phone {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.five {
+  padding-top: 90px;
+  padding-bottom: 50px;
+  p {
+    padding-top: 30px;
+  }
+}
+.six {
+  padding: 30px 0 50px 0;
+  display: flex;
+  justify-content: center;
+  max-width: 100vw;
+}
+.blacklists,
+.preview,
+.snippets {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  max-width: 400px;
+  h4 {
+    padding: 40px 0 20px 0;
+    color: var(--DarkGrayishBlue);
+    font-size: 25px;
+  }
+  p {
+    font-weight: 400;
+  }
+}
+.seven {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 80px 0;
+  img {
+    width: 10%;
+    height: 10%;
+  }
+}
+.eight {
+  padding-top: 60px;
+}
+footer {
+  background-color: #f5f6f8;
+  display: flex;
+  padding: 20px 0;
+  justify-content: space-evenly;
+  align-items: center;
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 50px;
+    row-gap: 10px;
+    height: 70px;
+    align-items: center;
+    p {
+      font-size: 16px;
+      color: var(--DarkGrayishBlue);
+      font-weight: 500;
+      cursor: pointer;
+      transition: 0.4s;
+    }
+    p:hover {
+      color: var(--StrongCyan);
+      scale: 1.1;
+    }
+  }
+  .f {
+    width: 4%;
+    height: 4%;
+  }
+  .logos {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+  }
+  svg{
+    transition: 0.4s;
+    cursor: pointer;
+    fill: #4C545C;
+  }
+  svg:hover{
+    fill: var(--StrongCyan);
+    scale: 1.1;
+  }
+}
+@media (max-width: 1200px) {
+  .three {
+    flex-direction: column;
+    align-items: center;
+    img {
+      width: 80vw;
+      margin: 0;
+    }
+    .list {
+      padding-left: 0;
+      max-width: 60%;
+      text-align: center;
+    }
+  }
+  .phone img {
+    width: 80vw;
+  }
+}
+@media (max-width: 650px) {
+  .six,
+  .seven {
+    flex-direction: column;
+    align-items: center;
+  }
+  .seven {
+    gap: 80px;
+    img {
+      width: 30vw;
+    }
+  }
+  footer{
+    flex-direction: column;
+    .grid{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      height: fit-content;
+      padding: 30px 0;
+    }
+  }
+}
+@media (max-width:486px) {
+  
+    .button{
+      display: block;
+      margin: 0px;
+
+    }
+  
+  button{
+    margin: 10px;
+    width: 90%;
+  }
+}
+@media (max-width:379px){
+  .container{
+    width: 90vw;
+  }
+  body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: url(bg-header-mobile.png) no-repeat;
+    background-size: contain;
+  }
+  footer{
+    width: 100%;
+  }
+}
